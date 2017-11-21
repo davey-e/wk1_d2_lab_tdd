@@ -48,15 +48,15 @@ class MiniLab2Test < MiniTest::Test
     assert_equal( "March", third_month_string )
     assert_equal( "September", ninth_month_string )
   end
-#
-#   def test_substring()
-#     first_month_string = number_to_short_month_name( 1 )
-#     third_month_string = number_to_short_month_name( 3 )
-#     ninth_month_string = number_to_short_month_name( 9 )
-#     assert_equal( "Jan", first_month_string )
-#     assert_equal( "Mar", third_month_string )
-#     assert_equal( "Sep", ninth_month_string )
-#   end
+
+  def test_substring()
+    first_month_string = number_to_short_month_name( 1 )
+    third_month_string = number_to_short_month_name( 3 )
+    ninth_month_string = number_to_short_month_name( 9 )
+    assert_equal( "Jan", first_month_string )
+    assert_equal( "Mar", third_month_string )
+    assert_equal( "Sep", ninth_month_string )
+  end
 #
 #
 #
