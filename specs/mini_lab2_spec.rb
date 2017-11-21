@@ -63,18 +63,34 @@ class MiniLab2Test < MiniTest::Test
 #   #Further
 #
 #   #Given the length of a side of a cube calculate the volume
-#   def test_volume_of_cube()
-#     #add test code here
-#   end
-#
-#   #Given the radius of a sphere calculate the volume
-#   def test_volume_of_sphere()
-#     #add test code here
-#   end
-#
-#   #Given a value in farenheit, convert this into celsius.
-#   def test_fahrenheit_to_celsius()
-#     #add test code here
-#   end
-#
+def test_volume_of_cube()
+  cube_volume1 = calc_cube_volume(1,2,3)
+  cube_volume2 = calc_cube_volume(2,2,2)
+  cube_volume3 = calc_cube_volume(2,4,6)
+  assert_equal(6, cube_volume1)
+  assert_equal(8, cube_volume2)
+  assert_equal(48, cube_volume3)
+end
+
+  #Given the radius of a sphere calculate the volume
+  def test_volume_of_sphere()
+    sphere_volume1 = calc_sphere_volume(1)
+    sphere_volume2 = calc_sphere_volume(2)
+    sphere_volume3 = calc_sphere_volume(6)
+    assert_equal(4.188786666666666, sphere_volume1)
+    assert_equal(33.51029333333333, sphere_volume2)
+    assert_equal(904.7779199999999, sphere_volume3)
+  end
+
+  #Given a value in farenheit, convert this into celsius.
+  def test_fahrenheit_to_celsius()
+    celcius_value1 = convert_f_to_c(0)
+    celcius_value2 = convert_f_to_c(32)
+    celcius_value3 = convert_f_to_c(60)
+    celcius_value4 = convert_f_to_c(100)
+    assert_equal(-17.77777777777778, celcius_value1)
+    assert_equal(0, celcius_value2)
+    assert_equal(15.555555555555557, celcius_value3)
+    assert_equal(37.77777777777778, celcius_value4)
+  end
 end

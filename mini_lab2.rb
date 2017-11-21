@@ -88,3 +88,17 @@ def number_to_short_month_name(number)
   when 12 then "Dec"
   end
 end
+
+def calc_cube_volume(length, width, height)
+  return length * width * height
+end
+
+def calc_sphere_volume(radius)
+  #Keeping the volume calc simple with not too many dp for PI (not sure how to use a built in constant yet)
+  #Also keeping radius as an int for simplicity as well
+  return (4.to_f / 3.to_f) * 3.14159 * (radius * radius * radius)
+end
+
+def convert_f_to_c(temperature_in_f)
+  return (temperature_in_f - 32) * (5.to_f / 9.to_f)
+end
