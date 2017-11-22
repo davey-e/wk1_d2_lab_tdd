@@ -78,7 +78,7 @@ def calc_sphere_volume(radius)
   #Also keeping radius as an int for simplicity as well
   return (4.to_f / 3.to_f) * 3.14159 * (radius * radius * radius)
   #A shortcut for (radius * radius * radius) is (radius ** 3)
-  #Another way to do conversion from int to float is to just put .0 on the end of the number_to_full_month_name
+  #Another way to do conversion from int to float is to just put .0 on the end of the number
   #e.g. 4.0 is the same as 4.to_f
 end
 
