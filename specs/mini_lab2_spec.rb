@@ -1,4 +1,5 @@
 require("minitest/autorun")
+require ("minitest/rg")
 require_relative("../mini_lab2")
 
 class MiniLab2Test < MiniTest::Test
@@ -80,6 +81,7 @@ end
     assert_equal(4.188786666666666, sphere_volume1)
     assert_equal(33.51029333333333, sphere_volume2)
     assert_equal(904.7779199999999, sphere_volume3)
+    #Could also use assert_in_delta(expected,actual,delta) to allow for differences in precision so that the test doesn't have to be quite so specific with the number of dp
   end
 
   #Given a value in farenheit, convert this into celsius.
